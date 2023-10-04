@@ -1,18 +1,270 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textColor="@color/cardview_dark_background"
+        android:text="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </TextView>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/cantidadStudentes"
+            android:id="@+id/cantidadEstudiantes"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/studentsQuantity"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <CheckBox
+            android:paddingLeft="10dp"
+            android:text="@string/guardarCantidad"
+            android:id="@+id/guardarCantidadEstudiantes"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content">
+
+        </CheckBox>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tvControl"
+        android:gravity="center"
+        android:textColor="@color/cardview_dark_background"
+        android:text="@string/notaActual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textAlignment="center"
+            android:text="@string/notaUno"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/gradeUno"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/notaDos"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/gradeDos"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/notaTres"
+            android:textAlignment="center"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/gradeTres"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/notaCuatro"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textAlignment="center"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/gradeCuatro"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/ingresoTotal"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textAlignment="center"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/totalIngresado"
+            android:text="@string/yes"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+        </CheckBox>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textColor="@color/cardview_dark_background"
+        android:text="@string/pruebaAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/ingresarNotas"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textAlignment="center"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/yes"
+                android:id="@+id/yesAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.radiobutton.MaterialRadioButton>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="@string/no"
+                android:id="@+id/noAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.radiobutton.MaterialRadioButton>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:visibility="visible"
+        android:text="@string/ingresar"
+        android:gravity="center"
+        android:id="@+id/ingresarDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/cardview_dark_background"
+        android:text="@string/perdidas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+</LinearLayout>

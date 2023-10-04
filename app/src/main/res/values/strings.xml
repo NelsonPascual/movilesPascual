@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">appdos</string>
+    <string name="app_name">App Gestión Notas</string>
+    <string name="cantidadStudentes">Número de Estudiantes</string>
+    <string name="notaActual">Se han ingresado 0 notas</string>
+    <string name="notaUno"> Ingresa la Nota 1 (Entre 0.0 y 5.0)</string>
+    <string name="notaDos"> Ingresa la Nota 2 (Entre 0.0 y 5.0)</string>
+    <string name="notaTres"> Ingresa la Nota 3 (Entre 0.0 y 5.0)</string>
+    <string name="notaCuatro"> Ingresa la Nota 4 (Entre 0.0 y 5.0)</string>
+    <string name="ingresoTotal"> ¿Ya ingresó todas las notas del estudiante?</string>
+    <string name="yes"> Sí</string>
+    <string name="no"> No</string>
+    <string name="ingresarNotas"> ¿Desea ingresar todas las notas del estudiante?</string>
+    <string name="pruebaAll"> Faltan notas por ingresar</string>
+    <string name="ingresar">Calcular Total</string>
+    <string name="perdidas">Perdieron 0 estudiantes</string>
+    <string name="guardarCantidad">Guardar</string>
+
 </resources>
