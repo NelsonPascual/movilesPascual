@@ -7,6 +7,7 @@ import android.os.Bundle;
 public class MainActivity extends AppCompatActivity {
 
     String nombreUsuario;
+    int cantidad;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
